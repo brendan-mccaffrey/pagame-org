@@ -381,27 +381,27 @@ h3 {
 
 /* line 1, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/_btn.scss */
 .boxed-btn {
-  background: #fff;
-  color: #131313;
+  background: #000;
+  color: #AEFDD2;
   display: inline-block;
   padding: 18px 44px;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 400;
   border: 0;
-  border: 1px solid #48B6FB;
+  border: 1px solid #AEFDD2;
   letter-spacing: 3px;
   text-align: center;
-  color: #48B6FB !important;
+  color: #AEFDD2 !important;
   text-transform: uppercase;
   cursor: pointer;
 }
 
 /* line 17, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/_btn.scss */
 .boxed-btn:hover {
-  background: #48B6FB;
-  color: #fff !important;
-  border: 1px solid #48B6FB;
+  background: #AEFDD2;
+  color: #000 !important;
+  border: 1px solid #000;
 }
 
 /* line 22, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/_btn.scss */
@@ -417,8 +417,8 @@ h3 {
 /* line 29, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/_btn.scss */
 .boxed-btn3 {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0181f5+0,5db2ff+100 */
-  background: #37EBED;
-  color: #fff;
+  background: #AEFDD2;
+  color: #000;
   display: inline-block;
   padding: 14px 27px;
   font-family: "Poppins", sans-serif;
@@ -429,7 +429,7 @@ h3 {
   -moz-border-radius: 5px;
   border-radius: 5px;
   text-align: center;
-  color: #fff !important;
+  color: #000 !important;
   text-transform: capitalize;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -441,8 +441,8 @@ h3 {
 
 /* line 48, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/_btn.scss */
 .boxed-btn3:hover {
-  background: #4BA8FD;
-  color: #fff !important;
+  background: #fff;
+  color: #AEFDD2 !important;
 }
 
 /* line 53, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/_btn.scss */
@@ -458,8 +458,8 @@ h3 {
 /* line 60, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/_btn.scss */
 .boxed-btn4 {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0181f5+0,5db2ff+100 */
-  background: #0181F5;
-  color: #fff;
+  background: #AEFDD2;
+  color: #000;
   display: inline-block;
   padding: 14px 27px;
   font-family: "Poppins", sans-serif;
@@ -470,7 +470,7 @@ h3 {
   -moz-border-radius: 5px;
   border-radius: 5px;
   text-align: center;
-  color: #fff !important;
+  color: #000 !important;
   text-transform: capitalize;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -482,8 +482,8 @@ h3 {
 
 /* line 79, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/_btn.scss */
 .boxed-btn4:hover {
-  background: #0181F5;
-  color: #fff !important;
+  background: #000;
+  color: #AEFDD2 !important;
 }
 
 /* line 84, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/_btn.scss */
@@ -1019,12 +1019,12 @@ h3 {
 
 /* line 124, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/_header.scss */
 .header-area .main-header-area .Appointment .book_btn a {
-  background: #42B3FA;
+  background: #AEFDD2;
   padding: 12px 26px;
   font-size: 14px;
   font-weight: 500;
   border: 1px solid transparent;
-  color: #fff;
+  color: #000;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -1039,9 +1039,9 @@ h3 {
 
 /* line 135, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/_header.scss */
 .header-area .main-header-area .Appointment .book_btn a:hover {
-  background: #4BA8FD;
-  color: #fff;
-  border: 1px solid #4BA8FD;
+  background: #fff;
+  color: #AEFDD2;
+  border: 1px solid #AEFDD2;
 }
 
 /* line 143, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/_header.scss */
@@ -1059,7 +1059,7 @@ h3 {
 
 /* line 157, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li a {
-  color: #fff;
+  color: #AEFDD2;
   font-size: 15px;
   text-transform: capitalize;
   font-weight: 400;
@@ -1398,7 +1398,7 @@ h3 {
 
 /* line 44, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text h3 {
-  color: #FFF;
+  color: #AEFDD2;
   font-family: "Poppins", sans-serif;
   font-size: 60px;
   text-transform: capitalize;
@@ -1462,7 +1462,7 @@ h3 {
 .slider_area .single_slider .slider_text p {
   font-size: 20px;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #AEFDD2;
   margin-bottom: 48px;
   margin-top: 16px;
 }
@@ -1772,7 +1772,7 @@ h3 {
 .productivity_area h3 {
   font-size: 46px;
   font-weight: 300;
-  color: #FFFFFF;
+  color: #AEFDD2;
   line-height: 60px;
 }
 
@@ -2957,7 +2957,7 @@ h3 {
 /* line 35, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/_bradcam.scss */
 .bradcam_area h3 {
   font-size: 60px;
-  color: #fff;
+  color: #AEFDD2;
   font-weight: 300;
   margin-bottom: 0;
   text-transform: capitalize;
