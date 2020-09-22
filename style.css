@@ -3,19 +3,31 @@ body {
 }
 aside {
     background: #AEFDD2; /* same color as selected state on site menu */
-    padding: 0.3em 1em;
-    border-radius: 3px;
-    color: #fff;
-    margin-bottom: 2em;
+    padding: 5px; /* Some padding */
+    border-radius: 10px; /* Rounded borders */
+    text-align: center;
+    font-weight: bold;
 }
 textarea {
-  width: 100%;
+  padding: 12px;
+  width: 70%;
+
 }
+.form-elements {
+  padding: 12px;
+
+}
+
+.pure-group {
+  color: #00ff00;
+}
+
 .content-head {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin: 2em 0 1em;
+    padding: 12px;
 }
 .is-center {
   text-align: center;
@@ -23,7 +35,7 @@ textarea {
 .button-success {
   color: black;
   border-radius: 4px;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  /* text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); */
   background: #AEFDD2; /* this is a green */
 }
 .button-xlarge {
