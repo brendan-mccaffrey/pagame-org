@@ -253,6 +253,99 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+    <h2 class="content-head is-center">Formulario de Interés Comercial</h2>
+    <aside>
+         <p>
+             Ingrese su nombre, su número de celular, un mensaje y su correo electrónico a continuación.
+             Estamos emocionados de conocerle y darle la más información sobre nuestros planes.
+             Háganos saber si tiene alguna pregunta enviándonos un correo electrónico a Pagamebolivia@pagame.org.
+             ¡Gracias!
+         </p>
+     </aside>
+
+  <!-- START HERE -->
+     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+     <!-- Style The Contact Form How Ever You Prefer -->
+     <link rel="stylesheet" href="style.css">
+
+    <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+    action="https://script.google.com/macros/s/AKfycbx9YzEmR82jvS3MtDMjlq67aM-oV2jwU1rO8IU13Q/exec">
+      <!-- change the form action to your script url -->
+
+      <div class="form-elements">
+        <fieldset class="pure-group">
+          <label for="name">
+
+              Nombre:
+
+          </label>
+          <input id="name" name="name" placeholder="Nombre Entero" />
+        </fieldset>
+
+        <div class="form-elements">
+          <fieldset class="pure-group">
+            <label for="phone">
+
+                Número de celular:
+
+            </label>
+            <input id="phone" name="phone" placeholder="Número de Cel" />
+          </fieldset>
+
+        <fieldset class="pure-group">
+          <label for="message">Mensaje: </label>
+          <textarea id="message" name="message" rows="10"
+          placeholder="Que nos quiere decir"></textarea>
+        </fieldset>
+
+        <fieldset class="pure-group">
+          <label for="email"><em>Su</em> Correo Electrónico:</label>
+          <input id="email" name="email" type="email" value=""
+          required placeholder="Ejemplo@pagame.org"/>
+        </fieldset>
+
+        <!-- <fieldset class="pure-group">
+          <label for="color">Favourite Color: </label>
+          <input id="color" name="color" placeholder="green" />
+        </fieldset>
+
+        <fieldset class="pure-group honeypot-field">
+          <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+          <input id="honeypot" type="text" name="honeypot" value="" />
+        </fieldset> -->
+
+        <button class="button-success pure-button button-xlarge">
+          <i class="fa fa-paper-plane"></i>&nbsp;Mandar</button>
+      </div>
+      <br><br><br><br>
+      <!-- Customise the Thankyou Message People See when they submit the form: -->
+      <div class="thankyou_message" style="display:none;">
+        <h2><em>Muchas Gracias</em> por contactarnos!
+          Nos pondremos en contacto con usted pronto!
+        </h2>
+        <br><br><br><br>
+      </div>
+
+    </form>
+
+    <!-- Submit the Form to Google Using "AJAX" -->
+    <script data-cfasync="false" src="form-submission-handler.js"></script>
+  <!-- END -->
+
+
+
+
+
+
+
     <!--/ about  -->
     <!-- testmonial_area  -->
 <!--     <div class="testmonial_area">
@@ -567,6 +660,22 @@
     <script src="js/jquery.form.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/mail-script.js"></script>
+
+    <script>
+        $('#datepicker').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+             rightIcon: '<span class="fa fa-caret-down"></span>'
+         }
+        });
+        $('#datepicker2').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+             rightIcon: '<span class="fa fa-caret-down"></span>'
+         }
+
+        });
+    </script>
 
     <script src="js/main.js"></script>
     <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>

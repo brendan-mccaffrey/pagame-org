@@ -3,7 +3,7 @@ body {
 }
 aside {
     background: #AEFDD2; /* same color as selected state on site menu */
-    padding: 5px; /* Some padding */
+    /* padding: 5px; /* Some padding */ 
     border-radius: 10px; /* Rounded borders */
     text-align: center;
     font-weight: bold;
