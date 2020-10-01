@@ -14,6 +14,20 @@ $(window).on('scroll', function () {
 
 
 
+//check box verification for contact forms
+document.getElementById('demoForm').onsubmit = function() {
+    // get reference to required checkbox
+    var terms = this.elements['terms'];
+
+    if ( !terms.checked ) { // if it's not checked
+        // display error info (generally not an alert these days)
+        alert( 'Please signify your agreement with our terms.' );
+        return false; // don't submit
+    }
+    return true; // submit
+};
+
+
 
 
 $(document).ready(function(){
