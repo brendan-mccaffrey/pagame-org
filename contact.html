@@ -108,33 +108,33 @@
     </div>
 
 
-    <h2 class="content-head is-center">Formulario de Contacto</h2>
-    <aside>
+
+    <h2 class="contactformhead">
+      Formulario de Contacto Comercial
+   </h2>
+      <aside class="contactformbanner">
          <p>
-             Ingrese su nombre, un mensaje y su correo electrónico a continuación.
-             Estamos emocionados de conocerle y darle la bienvenida a Págame.
-             Háganos saber si tiene alguna pregunta enviándonos un correo electrónico a Pagamebolivia@pagame.org.
-             ¡Gracias!
+           Ingrese su nombre, apellido, número de teléfono, un mensaje y correo electrónico.
+           Después acepte nuestros términos y condiciones, que se encuentran en la parte inferior de la página.
+           Háganos saber si tiene alguna pregunta enviándonos un correo electrónico a Pagamebolivia@pagame.org.
+           ¡Gracias y pronto nos pondremos en contacto!
          </p>
      </aside>
 
+
   <!-- START HERE -->
-     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+     <!-- <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-     <!-- Style The Contact Form How Ever You Prefer -->
+
      <link rel="stylesheet" href="style.css">
 
     <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
     action="https://script.google.com/macros/s/AKfycbyW6qF99gB3WUOnUONNkr7W_qtvBO6WK6CIwpRbauYtVpRO3ao/exec">
-      <!-- change the form action to your script url -->
+
 
       <div class="form-elements">
         <fieldset class="pure-group">
-          <label for="name">
-
-              Nombre:
-
-          </label>
+          <label for="name">Nombre:</label>
           <input id="name" name="name" placeholder="Nombre Entero" />
         </fieldset>
 
@@ -150,21 +150,11 @@
           required placeholder="Ejemplo@pagame.org"/>
         </fieldset>
 
-        <!-- <fieldset class="pure-group">
-          <label for="color">Favourite Color: </label>
-          <input id="color" name="color" placeholder="green" />
-        </fieldset>
-
-        <fieldset class="pure-group honeypot-field">
-          <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
-          <input id="honeypot" type="text" name="honeypot" value="" />
-        </fieldset> -->
-
         <button class="button-success pure-button button-xlarge">
           <i class="fa fa-paper-plane"></i>&nbsp;Mandar</button>
       </div>
       <br><br><br><br>
-      <!-- Customise the Thankyou Message People See when they submit the form: -->
+
       <div class="thankyou_message" style="display:none;">
         <h2><em>Muchas Gracias</em> por contactarnos!
           Nos pondremos en contacto con usted pronto!
@@ -174,9 +164,97 @@
 
     </form>
 
-    <!-- Submit the Form to Google Using "AJAX" -->
-    <script data-cfasync="false" src="form-submission-handler.js"></script>
+    <script data-cfasync="false" src="form-submission-handler.js"></script> -->
   <!-- END -->
+
+
+
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="style.css">
+
+
+  <form id="demoForm" style= "padding: 12px;" class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+  action="https://script.google.com/macros/s/AKfycbyW6qF99gB3WUOnUONNkr7W_qtvBO6WK6CIwpRbauYtVpRO3ao/exec">
+
+  <div class="form-elements">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="first name">Nombre</label>
+        <input type="text" class="form-control" id="first name" name = "first name">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="last name">Apellido</label>
+        <input type="text" class="form-control" id="last name" name="last name">
+      </div>
+    </div>
+
+    <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="phone number"> Número de Teléfono</label>
+      <input type="text" class="form-control" id="phone number" name="phone number" placeholder="+# (###) ###-####">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="email">Correo Electrónico</label>
+      <input type="email" class="form-control" id="email" name="email" required placeholder="Ejemplo@pagame.org">
+    </div>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Mensaje</label>
+      <textarea type="text" class="form-control" id="message" name="message" rows="4"
+      placeholder="Que nos quiere decir"></textarea>
+    </div>
+    <!-- <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCity">City</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputState">State</label>
+        <select id="inputState" class="form-control">
+          <option selected>Choose...</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputZip">Zip</label>
+        <input type="text" class="form-control" id="inputZip">
+      </div>
+    </div> -->
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="terms" name="terms" value="1">
+        <label class="form-check-label" for="gridCheck">
+          Acepto los Términos y Condiciones
+        </label>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary form-group contactformbutton" value="Submit">
+    <i class="fa fa-paper-plane"></i>&nbsp;Mandar</button>
+
+    </div>
+
+    <br><br>
+
+    <div class="thankyou_message" style="display:none;">
+      <h2><em>Muchas Gracias</em> por contactarnos!<br>
+        Nos pondremos en contacto con usted pronto!
+      </h2>
+      <br><br><br><br>
+    </div>
+
+  </form>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" src="form-submission-handler.js"></script>
+<!-- END -->
+
+
+
 
 
     <!-- <div class="container text-center" style="padding-top: 20px;">
