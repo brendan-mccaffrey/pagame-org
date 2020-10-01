@@ -207,11 +207,11 @@ center: true,
     $(this).addClass('active');
     event.preventDefault();
 	});
-  
+
   // wow js
   new WOW().init();
 
-  // counter 
+  // counter
   $('.counter').counterUp({
     delay: 10,
     time: 10000
@@ -402,7 +402,7 @@ $(document).ready(function() {
 
 
 
-//------- Mailchimp js --------//  
+//------- Mailchimp js --------//
 function mailChimp() {
   $('#mc_embed_signup').find('form').ajaxChimp();
 }
@@ -426,4 +426,4 @@ mailChimp();
             $("#search_input").focus();
         });
 
-})(jQuery);	
+})(jQuery);
