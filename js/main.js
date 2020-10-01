@@ -13,6 +13,7 @@ $(window).on('scroll', function () {
 });
 
 
+
 //check box verification for contact forms
 document.getElementById('demoForm').onsubmit = function() {
     // get reference to required checkbox
@@ -25,6 +26,8 @@ document.getElementById('demoForm').onsubmit = function() {
     }
     return true; // submit
 };
+
+
 
 
 $(document).ready(function(){
@@ -204,11 +207,11 @@ center: true,
     $(this).addClass('active');
     event.preventDefault();
 	});
-
+  
   // wow js
   new WOW().init();
 
-  // counter
+  // counter 
   $('.counter').counterUp({
     delay: 10,
     time: 10000
@@ -399,7 +402,7 @@ $(document).ready(function() {
 
 
 
-//------- Mailchimp js --------//
+//------- Mailchimp js --------//  
 function mailChimp() {
   $('#mc_embed_signup').find('form').ajaxChimp();
 }
@@ -423,4 +426,4 @@ mailChimp();
             $("#search_input").focus();
         });
 
-})(jQuery);
+})(jQuery);	
