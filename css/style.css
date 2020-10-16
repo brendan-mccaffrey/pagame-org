@@ -27,7 +27,7 @@ html,body
     width: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 body {
@@ -2799,8 +2799,8 @@ h3 {
 
 /* line 6, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/_footer.scss */
 .footer .footer_top {
-  padding-top: 117px;
-  padding-bottom: 205px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background: #1F1F1F;
 }
 
@@ -2972,13 +2972,13 @@ h3 {
 
 /* line 127, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/_footer.scss */
 .footer .copy-right_text {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   background: #000000;
 }
 
 /* line 130, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/_footer.scss */
 .footer .copy-right_text .footer_border {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 /* line 133, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/_footer.scss */
