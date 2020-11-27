@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" type="text/css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -331,8 +333,6 @@
 
   <form id="demoForm" style= "padding: 12px;" class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
   action="https://script.google.com/macros/s/AKfycbx9YzEmR82jvS3MtDMjlq67aM-oV2jwU1rO8IU13Q/exec">
-  <script src="https://www.google.com/recaptcha/api.js"></script>
-  <div class="g-recaptcha brochure__form__captcha" data-sitekey="6Ld5COUZAAAAALjHtPkoLlteZl3cnj4pgBFc-wvW"></div>
 
   <div class="form-elements">
     <div class="form-row">
@@ -387,10 +387,34 @@
         </label>
       </div>
     </div>
-
+    <div class="g-recaptcha brochure__form__captcha" data-sitekey="6Ld5COUZAAAAALjHtPkoLlteZl3cnj4pgBFc-wvW"></div>
     <button type="submit" class="btn btn-primary form-group contactformbutton"  value="Submit">
     <i class="fa fa-paper-plane"></i>&nbsp;Mandar</button>
-
+    <script>
+        $recaptcha = $_POST['g-recaptcha-response'];
+        $res = reCaptcha($recaptcha);
+        if(!$res['success']){
+        // Error
+        }
+    </script>
+    <script>
+    function reCaptcha($recaptcha){
+        $secret = "6Ld5COUZAAAAAPjFTZ7xEHHgjdqWJVOBx-dzU0Wz";
+        $ip = $_SERVER['REMOTE_ADDR'];
+      
+        $postvars = array("secret"=>$secret, "response"=>$recaptcha, "remoteip"=>$ip);
+        $url = "https://www.google.com/recaptcha/api/siteverify";
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $postvars);
+        $data = curl_exec($ch);
+        curl_close($ch);
+      
+        return json_decode($data, true);
+      }
+    </script>
     </div>
 
     <br><br>
