@@ -514,6 +514,13 @@ mark {
     max-width: 100%;
     height: auto
 }
+.img-fluid-profiles {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: auto;
+}
 
 .img-thumbnail {
     padding: .25rem;
