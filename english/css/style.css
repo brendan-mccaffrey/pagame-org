@@ -3676,6 +3676,9 @@ h3 {
   padding-bottom: 0px;
   border-bottom: 1px solid #E8E8E8;
 }
+.service_area_2 .service_content_wrap .service_change {
+  padding: 70px;
+}
 
 /* line 88, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/_service.scss */
 .service_area_2 .service_content_wrap .single_service {
