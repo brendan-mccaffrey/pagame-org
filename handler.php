@@ -21,7 +21,7 @@ $validator->field('comments')->maxLength(6000);
 
 
 
-$pp->sendEmailTo('pagamebolivia@pagame.org'); // ← Your email here
+$pp->sendEmailTo('benmcervantez@gmail.com'); // ← Your email here
 //$fh->sendEmailTo(['someone@gmail.com', 'someone.else@gmail.com']);
 
 echo $pp->process($_POST);
